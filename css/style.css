@@ -2,5 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aquamarine;
+}
+/* Struttura */
+header{
+    background-color: orange;
+}
+.nav_container{
+    background-color: red;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col_genere, .col_logo, .col_icon{
+    width: calc(100% / 3);
+    height: 70px;
+    background-color: beige;
+    border: 1px dashed black;
+    margin-top: 15px;
 }
