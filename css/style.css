@@ -29,10 +29,13 @@ header{
 }
 .col_vestito{
     width: calc(100% / 3);
-    background-color: cadetblue;
-    border: 1px dashed black;
     margin: 10px;
 }
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
 /* struttura footer */
 footer{
     background-color: #1a1a1a ;
@@ -88,6 +91,12 @@ footer{
 .vestito_img img{ 
     width: 100%;
 }
+.vestito_img{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
 .marca{
     color: grey;
 }
@@ -105,12 +114,13 @@ footer{
 }
 .cont_img{
     position: relative;
+    z-index: 0; 
 }
-.vestito_img_info{
+.vestito_img_prezzo{
     position: absolute;
     left: 0;
     bottom: 50px;
-
+    z-index: 2; 
     display: flex;
     justify-content: center;
 }
@@ -134,4 +144,35 @@ footer{
     position: absolute;
     right: 0;
     top: 10px;
+    z-index: 2; 
+}
+.overlay{
+    opacity: 0;
+    background-size: contain    ; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;  
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.img_1{
+    background-image: url("../img/1b.webp") ;
+}
+.img_2{
+    background-image: url("../img/2b.webp") ;
+}
+.img_3{
+    background-image: url("../img/3b.webp") ;
+}
+.img_4{
+    background-image: url("../img/4b.webp") ;
+}
+.img_5{
+    background-image: url("../img/5b.webp") ;
+}
+.img_6{
+    background-image: url("../img/6b.webp") ;
 }
