@@ -29,7 +29,6 @@ header{
 }
 .col_vestito{
     width: calc(100% / 3);
-    height: 400px;
     background-color: cadetblue;
     border: 1px dashed black;
     margin: 10px;
@@ -84,4 +83,55 @@ footer{
 }
 .icon_content li{
     margin: 0 10px;
+}
+/* stile main */
+.vestito_img img{ 
+    width: 100%;
+}
+.marca{
+    color: grey;
+}
+.modello{
+    font-weight: bold;
+}
+.prezzo_nuovo{
+    color: red;
+    display: inline-block;
+}
+.prezzo_vecchio{
+    color: gray;
+    text-decoration: line-through;
+    display: inline-block;
+}
+.cont_img{
+    position: relative;
+}
+.vestito_img_info{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+.sconto, .sost{
+    height: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.sconto{
+    background-color: red;
+    margin-right: 10px;
+}
+.sost{
+    background-color: green    ;
+}
+.vestito_img_heart{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
