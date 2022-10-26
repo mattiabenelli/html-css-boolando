@@ -6,11 +6,11 @@
 /* Struttura header */
 header{
     background-color: #ff6900;
+    color: white;
+    padding: 20px 0;
 }
 .nav_container{
-    background-color: red;
     width: 80%;
-    height: 100px;
     margin: 0 auto;
 }
 .row{
@@ -21,10 +21,6 @@ header{
 }
 .col_genere, .col_logo, .col_icon{
     width: calc(100% / 3);
-    height: 70px;
-    background-color: beige;
-    border: 1px dashed black;
-    margin-top: 15px;
 }
 /* Struttura main*/
 .main_container{
@@ -53,4 +49,39 @@ footer{
     background-color: beige;
     border: 1px dashed black;
     margin-top: 15px;
+}
+
+/* stile header */
+.genere_content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+}
+.genere_content li{
+    margin: 0 10px;
+}
+.genere_content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo_content img{
+    width: 40%;
+}
+.logo_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5px;
+}
+.icon_content li{
+    margin: 0 10px;
 }
