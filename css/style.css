@@ -5,7 +5,7 @@
 }
 /* Struttura header */
 header{
-    background-color: orange;
+    background-color: #ff6900;
 }
 .nav_container{
     background-color: red;
@@ -29,7 +29,6 @@ header{
 /* Struttura main*/
 .main_container{
     width: 80%;
-    height: 600px;
     margin: 0 auto;    
 }
 .col_vestito{
@@ -38,4 +37,20 @@ header{
     background-color: cadetblue;
     border: 1px dashed black;
     margin: 10px;
+}
+/* struttura footer */
+footer{
+    background-color: #1a1a1a ;
+}
+.footer_container{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+.col_info, .col_social{
+    width: calc(100% / 3);
+    height: 70px;
+    background-color: beige;
+    border: 1px dashed black;
+    margin-top: 15px;
 }
