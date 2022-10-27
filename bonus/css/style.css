@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Struttura header */
+header{
+    background-color: #ff6900;
+    color: white;
+    padding: 20px 0;
+}
+.nav_container{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.col_genere, .col_logo, .col_icon{
+    width: calc(100% / 3);
+}
+/* Struttura main*/
+.main_container{
+    width: 80%;
+    margin: 0 auto;    
+}
+.col_vestito{
+    width: calc(100% / 3);
+    margin: 10px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+/* struttura footer */
+footer{
+    background-color: #1a1a1a ;
+}
+.footer_container{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+}
+.col_info, .col_social{
+    width: calc(100% / 2);
+}
+
+/* stile header */
+.genere_content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+}
+.genere_content li{
+    margin: 0 10px;
+}
+.genere_content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo_content img{
+    width: 40%;
+}
+.logo_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_content ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 5px;
+}
+.icon_content li{
+    margin: 0 10px;
+}
+/* stile main */
+.vestito_img img{ 
+    width: 100%;
+}
+.vestito_img{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.marca{
+    color: grey;
+}
+.modello{
+    font-weight: bold;
+}
+.prezzo_nuovo{
+    color: red;
+    display: inline-block;
+}
+.prezzo_vecchio{
+    color: gray;
+    text-decoration: line-through;
+    display: inline-block;
+}
+.cont_img{
+    position: relative;
+    z-index: 0; 
+}
+.vestito_img_prezzo{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+}
+.sconto, .sost{
+    height: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.sconto{
+    background-color: red;
+    margin-right: 10px;
+}
+.sost{
+    background-color: green    ;
+}
+.vestito_img_heart{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 0; 
+}
+.overlay_img{
+    opacity: 0;
+    background-size: contain    ; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card:hover .overlay_img{
+    opacity: 1;
+}
+.overlay_heart{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center ;  
+}
+.vestito_img_heart:hover .overlay_heart{
+    opacity: 1;
+}
+.img_1{
+    background-image: url("../img/1b.webp") ;
+}
+.img_2{
+    background-image: url("../img/2b.webp") ;
+}
+.img_3{
+    background-image: url("../img/3b.webp") ;
+}
+.img_4{
+    background-image: url("../img/4b.webp") ;
+}
+.img_5{
+    background-image: url("../img/5b.webp") ;
+}
+.img_6{
+    background-image: url("../img/6b.webp") ;
+}
+/* stili footer */
+footer{
+    color: white;
+}
+.privacy ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start     ;
+    align-items: center; 
+}
+.privacy li{
+    margin-right: 20px ;
+}
+.col_info_società{
+    font-weight: bold;
+    margin: 0px 0 10px;
+    font-size: 20px;
+}
+.col_social_text ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.col_social_text{
+    text-align: end;
+    font-size: 20px;
+    margin: 20px 30px 0px;
+}
+.col_social_text li{
+    margin: 0px 5px 0;
+}
