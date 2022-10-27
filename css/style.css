@@ -46,11 +46,7 @@ footer{
     margin: 0 auto;
 }
 .col_info, .col_social{
-    width: calc(100% / 3);
-    height: 70px;
-    background-color: beige;
-    border: 1px dashed black;
-    margin-top: 15px;
+    width: calc(100% / 2);
 }
 
 /* stile header */
@@ -175,4 +171,36 @@ footer{
 }
 .img_6{
     background-image: url("../img/6b.webp") ;
+}
+/* stili header */
+footer{
+    color: white;
+}
+.privacy ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start     ;
+    align-items: center; 
+}
+.privacy li{
+    margin-right: 20px ;
+}
+.col_info_società{
+    font-weight: bold;
+    margin: 0px 0 10px;
+    font-size: 20px;
+}
+.col_social_text ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.col_social_text{
+    text-align: end;
+    font-size: 20px;
+    margin: 20px 30px 0px;
+}
+.col_social_text li{
+    margin: 0px 5px 0;
 }
